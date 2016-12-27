@@ -1,0 +1,325 @@
+body {
+  background-color: #005c99;
+  margin: 0;
+}
+
+#dateDiv {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+#currentDate {
+  display: inline;
+}
+
+nav {
+  background-color: #800000;
+  position: fixed;
+  top: 0px;
+  height: 100px;
+  width: 100%;
+}
+
+nav h1 {
+  display: none;
+}
+
+#navButtons {
+  width: 100%;
+}
+
+#navButtons button {
+  background-color: #b36b00;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+}
+
+#main {
+  background-color: #005c99;
+}
+
+/*about*/
+
+#about {
+  background-color: white;
+  width: 100%;
+}
+
+#aboutDiv {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#aboutDiv div {
+  width: 100%;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#textDiv {
+  background-color: #800000;
+  border: 1px solid black;
+  padding-right: 20px;
+}
+
+.aboutText {
+  font-size: 1.5em;
+  color: white;
+}
+
+#mainPic {
+  display: none;
+}
+
+/*End about*/
+
+/*transitions*/
+
+#trans {
+  margin-top: -23px;
+}
+
+.transition {
+  background-color: #800000;
+  width: 100%;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.transition h1 {
+  font-size: 30px;
+}
+
+/*end transitions*/
+
+/*portfolio*/
+
+#portfolio {
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.portfolioColumn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.projImg {
+  width: 90%;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.projectDescription {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+/*end portfolio*/
+
+/*Contact*/
+
+#contact {
+  background-color: white;
+  color: #800000;
+  width: 96%;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.iconCol {
+  display: block;
+  width: 95%;
+  text-align: center;
+}
+
+#email {
+  font-size: 25px;
+}
+
+
+i {
+  color: #800000;
+}
+
+/*End contact*/
+
+/*footer*/
+
+footer {
+  background-color: #800000;
+  text-align: center;
+  color: #b36b00;
+  padding: 5px 100px;
+}
+
+footer hr {
+  display: none;
+}
+
+/*End footer*/
+
+
+
+
+@media (min-width: 450px) {
+
+  #dateDiv {
+    text-align: right;
+  }
+
+  #currentDate {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: .9;
+    margin-top: 33px;
+    border-bottom: 5px solid black;
+    z-index: 1;
+  }
+
+  nav h1 {
+    color: white;
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    margin-left: 2%;
+    font-size: 50px;
+  }
+
+  #navButtons {
+    text-align: right;
+  }
+
+  #navButtons button {
+    width: 200px;
+    margin-right: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #contactButton {
+    margin-right: 60px;
+  }
+
+  /*about*/
+
+  #about {
+    width: 96%;
+    margin: 135px auto 25px auto;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  #aboutDiv {
+    width: 95%;
+  }
+
+  #aboutDiv div {
+    width: 47%;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  #textDiv {
+    position: relative;
+    left: 20px;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  .aboutText {
+    color: #ffad33;
+  }
+
+  #mainPic {
+    width: 60%;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /*End about*/
+
+  /*transitions*/
+
+  .transition {
+    border-left: 35px solid black;
+  }
+
+  .transition h1 {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  /*end transitions*/
+
+  /*portfolio*/
+
+  #portfolio {
+    width: 96%;
+  }
+
+  .portfolioColumn {
+    width: 50%;
+  }
+
+  #rightColumn {
+    float: right;
+  }
+
+  .projImg {
+    width: 70%;
+  }
+
+  /*end portfolio*/
+
+  /*Contact*/
+
+  .iconCol {
+    display: inline-block;
+    width: 33%;
+  }
+
+  /*End Contact*/
+
+  /*footer css*/
+
+  footer hr {
+    background-color: white;
+    height: 2px;
+  }
+
+  .iconCol {
+    margin-bottom: 10px;
+  }
+
+  /*end footer*/
+
+}
