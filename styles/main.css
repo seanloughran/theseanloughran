@@ -20,6 +20,7 @@ nav {
   top: 0px;
   height: 100px;
   width: 100%;
+  z-index: 1;
 }
 
 nav h1 {
@@ -50,6 +51,7 @@ nav h1 {
 #about {
   background-color: white;
   width: 100%;
+  margin-top: 107px;
 }
 
 #aboutDiv {
@@ -66,7 +68,7 @@ nav h1 {
 }
 
 #textDiv {
-  background-color: #800000;
+  background-color: #005c99;
   border: 1px solid black;
   padding-right: 20px;
 }
@@ -74,6 +76,8 @@ nav h1 {
 .aboutText {
   font-size: 1.5em;
   color: white;
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 #mainPic {
@@ -85,7 +89,7 @@ nav h1 {
 /*transitions*/
 
 #trans {
-  margin-top: -23px;
+  margin-top: -16px;
 }
 
 .transition {
@@ -94,6 +98,7 @@ nav h1 {
   color: white;
   padding-top: 1%;
   padding-bottom: 1%;
+  text-align: center;
 }
 
 .transition h1 {
@@ -176,7 +181,7 @@ footer hr {
 
 
 
-@media (min-width: 450px) {
+@media (min-width: 840px) {
 
   #dateDiv {
     text-align: right;
@@ -214,8 +219,9 @@ footer hr {
     width: 200px;
     margin-right: 20px;
     font-size: 20px;
-    border: none;
+    border: 1px solid black;
     border-radius: 10px;
+    outline: 0;
   }
 
   #contactButton {
@@ -226,7 +232,7 @@ footer hr {
 
   #about {
     width: 96%;
-    margin: 135px auto 25px auto;
+    margin: 135px auto 17px auto;
     border-radius: 10px 10px 0px 0px;
     display: flex;
     justify-content: center;
@@ -271,6 +277,7 @@ footer hr {
 
   .transition {
     border-left: 35px solid black;
+    text-align: left;
   }
 
   .transition h1 {
@@ -305,6 +312,7 @@ footer hr {
   .iconCol {
     display: inline-block;
     width: 33%;
+    margin-bottom: 10px;
   }
 
   /*End Contact*/
@@ -312,12 +320,9 @@ footer hr {
   /*footer css*/
 
   footer hr {
+    display: block;
     background-color: white;
     height: 2px;
-  }
-
-  .iconCol {
-    margin-bottom: 10px;
   }
 
   /*end footer*/

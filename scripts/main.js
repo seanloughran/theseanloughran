@@ -23,4 +23,16 @@ $(document).ready(function(){
     $(this).css("border-bottom", "none")
   });
 
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll > 40) {
+      $("nav").css("margin-top", "0");
+      $("nav h1").css("top", "-22px");
+    }
+    if (scroll <= 40) {
+      $("nav").css("margin-top", "33px");
+      $("nav h1").css("top", "10px");
+    }
+  });
+
 });
