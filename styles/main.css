@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+p {
+  font-family: sans-serif;
+}
+
 #dateDiv {
   text-align: center;
   color: white;

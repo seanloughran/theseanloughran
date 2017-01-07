@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  
   $("button").mouseover(function() {
     $(this).css("background-color", "#990000");
   });
@@ -32,6 +32,37 @@ $(document).ready(function(){
     if (scroll <= 40) {
       $("nav").css("margin-top", "33px");
       $("nav h1").css("top", "10px");
+    }
+  });
+
+  $('#topLink').on('click', function(event) {
+    console.log("Contact click");
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+  });
+
+  $('#projectLink').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+  });
+
+  $('#contactLink').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
     }
   });
 

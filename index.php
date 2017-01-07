@@ -18,9 +18,9 @@
   <nav>
     <h1>SL</h1>
     <div id="navButtons">
-      <a href="#top"><button>Top</button></a>
-      <a href="#trans"><button>Portfolio</button></a>
-      <a href="#contact"><button id="contactButton">Contact</button></a>
+      <a href="#dateDiv" id="topLink"><button>Top</button></a>
+      <a href="#trans" id="projectLink"><button>Portfolio</button></a>
+      <a href="#contact" id="contactLink"><button id="contactButton">Contact</button></a>
     </div>
   </nav>
 
@@ -54,25 +54,29 @@
     <section id="portfolio">
 
       <div class="portfolioColumn">
-        <a href="http://cocktail-fellows.herokuapp.com/" target="_blank"><img src="images/cocktailfellows.png" class="projImg"></a>
+
+      	<a href="https://seanloughran.github.io/weatherApp/" target="_blank"><img src="images/weatherapp.png" alt="screenshot for weather app" class="projImg"></a>
+        <p class="projectDescription">Weather App</p>
+
+        <a href="http://cocktail-fellows.herokuapp.com/" target="_blank"><img src="images/cocktailfellows.png" alt="screenshot for cocktail fellows website" class="projImg"></a>
         <p class="projectDescription">Cocktail Fellows</p>
 
-        <a href="http://seanloughran.github.io/Bcykleta/" target="_blank"><img src="images/bcykleta.png" class="projImg"></a>
+        <a href="http://seanloughran.github.io/Bcykleta/" target="_blank"><img src="images/bcykleta.png" alt="screenshot for bcykelta bike shop website" class="projImg"></a>
         <p class="projectDescription">Bcykleta Bike Shop</p>
 
-        <a href="https://seanloughran.github.io/weatherApp/" target="_blank"><img src="images/weatherapp.png" class="projImg"></a>
-        <p class="projectDescription">Weather App</p>
       </div>
 
       <div id="rightColumn" class="portfolioColumn">
-        <a href="https://seanloughran.github.io/chrisfarleytribute/" target="_blank"><img src="images/chrisfarley.png" class="projImg"></a>
+      	<a href="https://belowtherimpdx.github.io/podcast/" target="_blank"><img src="images/belowTheRim.png" alt="screenshot for podcast website" class="projImg"></a>
+        <p class="projectDescription">Podcast Website</p>
+
+        <a href="https://seanloughran.github.io/chrisfarleytribute/" target="_blank"><img src="images/chrisfarley.png" alt="screenshot for chris farley tribute website" class="projImg"></a>
         <p class="projectDescription">Chris Farley Tribute</p>
 
-        <a href="https://seanloughran.github.io/ChuckNorrisGenerator/" target="_blank"><img src="images/chucknorris.png" class="projImg"></a>
+        <a href="https://seanloughran.github.io/ChuckNorrisGenerator/" target="_blank"><img src="images/chucknorris.png" alt="Screenshot for chuck norris joke website" class="projImg"></a>
         <p class="projectDescription">Chuck Norris Joke Generator</p>
 
-        <a href="#" target="_blank"><img src="http://metrobc.com.au/wp-content/uploads/2015/10/PROJECT-PLACEHOLDER-METROBC.jpg" class="projImg"></a>
-        <p class="projectDescription">Project Coming Soon</p>
+        <!-- http://metrobc.com.au/wp-content/uploads/2015/10/PROJECT-PLACEHOLDER-METROBC.jpg -->
       </div>
 
     </section>
